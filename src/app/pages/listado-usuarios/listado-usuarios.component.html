@@ -30,7 +30,7 @@
                             <td>{{usuario.correo}}</td>
                             <td>{{usuario.status}}</td>
                             <td><button style="text-decoration: none;" class="btn btn-link mr-3 text-primary" (click)="editar(usuario.correo)">Editar</button></td>
-                            <td><button style="text-decoration: none;" class="btn btn-link mr-3 text-danger">Eliminar</button></td>
+                            <td><button type="button" style="text-decoration: none;" class="btn btn-link mr-3 text-danger" (click)="eliminar()">Eliminar</button></td>
                         </tr>
                     </tbody>
                 </table>
