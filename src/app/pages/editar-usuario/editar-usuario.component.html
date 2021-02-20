@@ -1,0 +1,52 @@
+<div class="container mt-5">
+    <div class="row">
+        <h1>Editar Usuario</h1>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-12">
+            <form action="">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong><label for="">Nombre</label></strong>
+                                <input value="{{usuario.nombre}}" class="form-control" type="text" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong><label for="">Apellido</label></strong>
+                                <input value="{{usuario.apellido}}" class="form-control" type="text" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <strong><label for="">Correo</label></strong>
+                            <input value="{{usuario.correo}}" class="form-control" type="email" required>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <strong><label for="">Observaciones</label></strong>
+                            <textarea placeholder="Añadir observaciones" class="form-control" name="" id="" cols="30" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-12 text-right">
+                  <button style="text-decoration: none;" class="btn btn-link mr-3 text-danger" [routerLink]="['/lista-usuarios']">Cancelar</button>
+                  <button class="btn btn-primary">Crear</button>
+              </div> -->
+                <div class="list-inline mt-3 text-right">
+                    <div class="list-inline-item">
+                        <div class="form-group row">
+                            <div class="mr-3">
+                                <button style="text-decoration: none;" class="btn btn-link mr-3 text-danger" [routerLink]="['/lista-usuarios']">Cancelar</button>
+                                <button type="submit " class="btn btn-primary btn-sm ">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
